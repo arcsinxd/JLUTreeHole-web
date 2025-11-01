@@ -1,0 +1,147 @@
+* {
+
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html,body {
+  margin: 0;
+  height: 100%;
+}
+.header {
+  height: 50px;
+}
+
+/* 导航栏容器 */
+li{
+  list-style: none;
+}
+
+
+.logo{
+  float: left;
+  height: 50px;
+}
+
+.nav{
+  float: right;
+  position: relative;
+  z-index: 2;
+  background-color: rgb(120, 175, 224);
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+
+.nav ul li{
+  float: right;
+}
+
+.nav ul li a{
+  display: block;
+  position: relative;
+  z-index: 3;
+  padding: 0 20px;
+  height: 35px;
+  text-decoration: none;
+  color: #000;
+}
+
+
+
+.nav ul li a:hover {
+  border-bottom: 2px solid #2050fd;
+  color: #2050fd;
+}
+
+/* 主要内容区 */
+
+.welcome {
+  text-align: center;      /* 文字水平居中（针对多行文本） */
+  margin: 0;              /* 清除默认外边距 */
+  padding: 100px;          /* 增加呼吸空间 */
+  z-index: 2; 
+}
+.content{
+  background-color:white;
+  margin: 0;              /* 清除默认外边距 */
+  padding: 40px;          /* 增加呼吸空间 */
+  z-index: 2; 
+}
+
+.search-bar {
+  text-align: center;
+  margin: 20px auto;
+  position: relative;
+  z-index: 2;
+}
+
+.search-bar form {
+  display: inline-block;
+}
+
+.search-bar input {
+  padding: 5px;
+  width: 250px;
+  display: inline-block;
+}
+
+.search-bar button {
+  padding: 5px 12px;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+  margin-top: 30px;
+  padding: 40px;
+}
+
+input[type="submit"] , input[type="reset"] ,button{
+  background-color: #2050fd;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover , input[type="reset"]:hover,button:hover {
+  background-color: #1a3e8f;
+}
+
+.first-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.2;
+  object-fit: fill;
+  z-index: 1;          /* 图片置于底层 */
+  pointer-events: none;
+}
+
+.error {
+  margin-left: 10px;
+  font-size: 0.9em;
+}
+
+.invalid {
+    border-color: #ff4444 !important;
+}
+
+.valid {
+  border-color: #00C851 !important;
+}
+
+.username {
+  color: #1e8bff; /* 设置一个深蓝色 */
+  font-weight: bold; /* 字体加粗 */
+  font-size: 1.05em; /* 稍微放大一点点 */
+}
